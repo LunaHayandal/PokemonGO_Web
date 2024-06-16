@@ -1,0 +1,281 @@
+/* !!! Body 좌측 div */
+.informationBox {
+    border-radius: 10px;
+    background-color: #FFF;
+    width: 100%;
+}
+
+/* !!! 패널１ - 레이드 난이도, 도감번호, 이름 */
+.box1 {
+    display: grid;
+    grid-template-rows: repeat(1, 35% 65%);
+    height: max(80px, 8.2vw);
+    font-size: clamp(75%, 1vw, 110%);
+}
+
+
+
+/* !!! 패널１ - 상측 부분, 레이드 난이도 */
+.boxRaidStar {
+    display: grid;
+    margin: 0 auto;
+    width: 100%;
+    font-size: max(2.8vw, 28px);
+    letter-spacing: 0.4em;
+    padding: 10px 0 0 0;
+}
+
+h4.brsItem {
+    font-family: '보케';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7em;
+}
+
+
+
+/* !!! 패널１ - 하측 부분, 도감 번호 & 포켓몬 이름 */
+.boxNameNumber {
+    display: grid;
+    grid-template-columns: repeat(1, 30% 70%);
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+h4.bnnItem {
+    font-family: "손글씨1";
+    font-size: max(40px, 5vw);
+    letter-spacing: 0.16em;
+}
+
+p.bnnItem {
+    font-family: '손글씨1';
+    font-size: max(3vw, 30px);
+    letter-spacing: 0.05em;
+}
+
+/* h1.bnnItem {
+    font-family: '카페24손글씨';
+    font-size: max(4vw, 35px);
+    letter-spacing: 0.2em;
+} */
+
+
+
+/* !!! 패널２ - 포켓몬 타입 */
+#typeBox {
+    display: flex;
+    margin: 2%;
+    padding: 0%;
+}
+
+.pokemonType {
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 5px;
+    font-size: max(3vw, 30px);
+}
+
+/* !!! 패널３ - 사진, 공/방/체 정보 */
+#infoBox {
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    margin: 0px 2%;
+    text-align: center;
+}
+
+.infoImg {
+    margin: auto;
+}
+
+.infoImg img {
+    display: grid;
+    margin: auto;
+    width: 27vw;
+}
+
+.infoADH {
+    display: grid;
+    align-items: center;
+    letter-spacing: 2px;
+    width: 100%;
+    height: 80%;
+    gap: 1.4vh;
+}
+.infoADH p {
+    font-family: "손글씨1";
+    font-size: max(16px, 2.4vw);
+    letter-spacing: 0.4em;
+}
+
+.infoADHNum {
+    display: grid;
+    align-items: center;
+    letter-spacing: 5px;
+    width: 100%;
+    height: 80%;
+    gap: 1.4vh;
+}
+
+.infoADHNum p {
+    display: grid;
+    margin: auto;
+    font-family: '보케';
+    font-size: max(12px, 2.6vw);
+}
+
+
+/* !!! 패널４ 레이드 최소 인원 */
+.diffBox {
+    background-color: rgba(216, 133, 133, 0.815);
+    display: grid;
+    grid-template-columns: repeat(1, 70% 30%);
+    text-align: center;
+    align-items: center;
+    margin: 20px 2%;
+    border-radius: 8px;
+}
+
+.diffBox h3 {
+    font-family: '손글씨1';
+    font-size: max(40px, 5vw);
+    letter-spacing: 0.3rem;
+    padding: 2% 0px;
+}
+
+.diffBox p {
+    /* 레이드 최소 인원수 */
+    font-size: max(30px, 4vw);
+}
+
+
+/* !!! 패널５ - LV 20과 25에 대한 CP */
+.cpBox {
+    display: grid;
+    grid-template-columns: repeat(1, 50% 50%);
+    text-align: center;
+    align-items: center;
+    margin: 0 2%;
+    padding-bottom: 2%;
+}
+
+.cpBox h3 {
+    letter-spacing: 0.1em;
+    margin: 0 0 -0.5em 0;
+    font-size: max(20px, 2vw);
+}
+
+.cpBox p {
+    padding: 20px 0px;
+    font-family: '보케';
+    font-size: max(24px, 2.6vw);
+    letter-spacing: 0.1em;
+}
+
+.cpBoxLV20 {
+    margin: 0;
+}
+
+.cpBoxLV20 p {
+    margin: 0 2% 0 0;
+}
+
+.cpBoxLV25 {
+    margin: 0;
+}
+
+.cpBoxLV25 p {
+    margin: 0 0 0 2%;
+}
+
+
+
+/* !!! Body 우측 div */
+.skillListBox {
+    border-radius: 10px;
+    background-color: #FFF;
+    margin: 0;
+    display: grid;
+    justify-items: center;
+}
+
+
+/* !!! 패널１ - 스킬 종류(기본/특수) */
+.skillListBox h4 {
+    font-size: max(19px, 1.9vw);
+    font-family: '보케';
+    letter-spacing: 5px;
+    padding: 8px;
+}
+
+
+/* !!! 패널２ - 각 스킬 상자 */
+.nsList {
+    width: 100%;
+    height: 100%;
+}
+
+.nsList table {
+    margin: auto;
+    width: 100%;
+}
+
+tbody {
+}
+
+.skillList {
+    display: grid;
+    gap: 0.5vw;
+}
+
+.skill {
+    border-radius: 10px;
+    background: #4a4c5c;
+    color: #fff;
+    padding: 0.6vw 0;
+    width: 90%;
+}
+
+.skillBox {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "sn sn" "dc ed";
+    align-items: center;
+}
+
+.snBox {
+    grid-area: sn;
+}
+
+.skillName {
+    font-family: '지마켓';
+    font-size: max(20px, 1.4vw);
+}
+
+.dcBox {
+    grid-area: dc;
+    display: grid;
+    gap: 5px;
+}
+
+.damageCooltime {
+    font-family: '지마켓';
+    font-size: max(10px, 0.9vw);
+}
+
+.edBox {
+    grid-area: ed;
+    display: grid;
+    gap: 5px;
+}
+
+.epsDps {
+    font-family: '지마켓';
+    font-size: max(10px, 0.9vw);
+}

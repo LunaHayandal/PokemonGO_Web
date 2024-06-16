@@ -1,0 +1,80 @@
+/* fonts.css */
+@font-face {
+    font-family: '손글씨1';
+    src : url('/fonts/Cafe24Behappy.woff') format('woff');
+    transform: rotate(0.04deg);
+}
+
+@font-face {
+    font-family: '손글씨2';
+    src : url('/fonts/BRADHITC.woff') format('woff');
+    transform: rotate(0.04deg);
+}
+
+@font-face {
+    font-family: '마포한아름';
+    src : url('/fonts/Mapo한아름.woff') format('woff');
+    transform: rotate(0.04deg);
+}
+
+@font-face {
+    font-family: '카페24손글씨';
+    src: url('/fonts/Cafe24Decoschool.woff') format('woff');
+    transform: rotate(0.04deg);
+}
+
+@font-face {
+    font-family: '보케';
+    src: url('/fonts/BOKEH.woff') format('woff');
+    transform: rotate(0.04deg);
+}
+
+* {
+    margin: auto;
+    padding: 0px;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr 2fr);
+    grid-template-rows: repeat(2, 1fr 1fr);
+    background-color: #4A4C5C;
+    font-family: "손글씨1";
+    color: #333c4b;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    "hd hd"
+    "main article"
+    "main article"
+    "ft ft"
+    ;
+}
+
+header {
+    grid-area: hd;
+}
+
+main {
+    margin: auto 10px;
+    height: 100%;
+    display: flex;
+    grid-area: main;
+}
+
+article {
+    margin: 0 10px;
+    display: grid;
+    grid-template-rows: repeat(1, 1fr 1fr);
+    gap: 1vh;
+    grid-area: article;
+}
+
+footer {
+    grid-area: ft;
+}

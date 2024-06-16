@@ -1,0 +1,266 @@
+/* 포켓몬 정보 표시 */
+#pointOne {
+    /* 전체 상자 1 디자인 */
+    border-radius: 10px;
+    background-color: #333c4b;
+    margin: 0 0 10px 0;
+}
+
+#basicInfoPanel {
+    /* 첫번째 패널 디자인 */
+    display: grid;
+    grid-template-columns: repeat(1, 30% 70%);
+    margin: 2% 0px 0px 0px;
+    padding: 10px 0 0 0;
+    font-size: clamp(75%, 1vw, 110%);
+}
+
+#raidTitleDisplay {
+    /* 첫번째 패널 좌측 - 도감 번호와 단어 "RAID" 표기 */
+    display: grid;
+    grid-template-rows: repeat(1, 30% 70%);
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+    font-size: max(4vw, 40px);
+    letter-spacing: 0.3rem;
+}
+
+p.raidTitleItem {
+    display: flex;
+    justify-content: center;
+}
+
+h3.raidTitleItem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pokemonName {
+    /* 첫번째 패널 우측 - 포켓몬 이름 표기 */
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    place-content: center;
+}
+
+#pokemonName input {
+    /* 레이드 포켓몬 이름 입력 */
+    font-family: '손글씨2';
+    font-size: 30px;
+    width: 400px;
+    border: 3px solid rgb(226, 168, 168);
+    border-radius: 7px;
+}
+
+#typePanel {
+    /* 두번째 패널 디자인 */
+    display: grid;
+    grid-template-columns: repeat(1, 1fr 1fr);
+    align-items: center;
+    width: 400px;
+    margin: 2%;
+}
+
+.pokemonType {
+    /* Type 1, 2 */
+    width: 20%;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0px 10px 0px;
+    margin: 0px 5px;
+    font-size: max(3vw, 30px);
+}
+select.pokemonType {
+    padding-left: 6px;
+    margin-left: 10px;
+    width: 100px;
+    height: 20px;
+}
+.selectPokemonType {
+    padding-left: 6px;
+    margin-left: 10px;
+    width: 100px;
+    height: 30px;
+}
+
+#imgChaInfoPanel {
+    /* 세번째 패널 디자인 */
+    display: grid;
+    grid-template-columns: 70% 15% 15%;
+    margin: 0px 2%;
+    text-align: center;
+    font-size: clamp(90%, 1vw, 120%);
+    font-family: '손글씨2';
+}
+
+#pokemonImg {
+    margin: auto;
+}
+
+#pokemonImg img {
+    width: 60%;
+}
+
+#pokemonInfoTitle {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    letter-spacing: 2px;
+}
+
+.pokemonInfo h6 {
+    padding: 5% 0%;
+    font-size: max(15pt, 1.8vw);
+}
+
+#pokemonInfoNum {
+    display: grid;
+    grid-template-rows: auto;
+    align-items: center;
+    justify-content: start;
+    letter-spacing: 5px;
+}
+
+#raidDiffPanel {
+    background-color: rgba(216, 133, 133, 0.815);
+    /* 네번째 패널 디자인 */
+    display: grid;
+    grid-template-columns: repeat(1, 70% 30%);
+    text-align: center;
+    align-items: center;
+    margin: 20px 2%;
+    border-radius: 8px;
+}
+
+#raidDiffPanel h3 {
+    font-family: '손글씨1';
+    font-size: 5vw;
+    letter-spacing: 0.3rem;
+    padding: 2% 0px;
+}
+
+#raidDiffPanel p {
+    /* 레이드 최소 인원수 */
+    font-size: 3.4vw;
+}
+
+#eachLvCpPanel {
+    /* LV.20과 LV.25 CP 정보 */
+    display: grid;
+    grid-template-columns: repeat(1, 50% 50%);
+    text-align: center;
+    align-items: center;
+    margin: 0 2%;
+}
+
+#eachLvCpPanel h3 {
+    margin: 0 0 -0.5em 0;
+    font-size: max(25px, 2vw);
+    color: white;
+    text-shadow: 6px 6px black;
+}
+
+#eachLvCpPanel h6 {
+    padding: 20px 0px;
+    border-radius: 20px;
+    font-family: '손글씨2';
+    font-size: max(30px, 2.5vw)
+}
+
+#pokemonInfoLV20 p {
+    margin: 0 2% 0 0;
+}
+
+#pokemonInfoLV25 p {
+    margin: 0 0 0 2%;
+}
+
+
+/* 스킬 리스트 */
+#pointTwo {
+    /* 틀２ - 레이드 포켓몬 스킬 */
+    border-radius: 10px;
+    background-color: white;
+    margin: 10px 0 0 0;
+}
+
+#skillPanel {
+    /* 'Skill Title' 패널 */
+    text-align: center;
+}
+
+#skillPanel h3 {
+    font-size: max(4vw, 40px);
+    letter-spacing: 0.3rem;
+
+}
+
+#skillList {
+    /* 기본 & 특수 스킬 분할 */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: max(20px, 1.5vw);
+    letter-spacing: 0.3rem;
+    font-family: '손글씨2';
+}
+
+
+/* 기본 스킬 */
+.panelName {
+    height: 30px;
+    margin: 3px;
+}
+
+.skillPanelList {
+    /* 기본 스킬 리스트 배열 */
+    display: grid;
+}
+
+
+.SkillBox {
+    /* 기본 스킬 박스 각각의 CSS */
+    font-family: '마포한아름';
+    color: whitesmoke;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "skillName skillName"
+        "dc edps";
+    background-color: rgb(126, 124, 124);
+    border-radius: 5px;
+    width: 80%;
+    margin: 5px auto;
+}
+
+.dc {
+    grid-area: dc;
+}
+
+.edps {
+    grid-area: edps;
+}
+
+.skillName {
+    /* 스킬명 */
+    grid-area: skillName;
+    font-size: max(20px, 1.5vw);
+    text-align: center;
+}
+
+p.dc {
+    /* 데미지, 재사용 시간 */
+    font-size: max(10px, 0.8vw);
+    margin: 0 0 0 10pt;
+}
+
+p.edps {
+    /* EPS/DPS */
+    font-size: max(10px, 0.8vw);
+    margin: 0 0 0 10pt;
+}
+
+
+/* 특수 스킬 */
